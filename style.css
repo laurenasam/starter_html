@@ -1,0 +1,38 @@
+/* Style the navigation bar */
+nav {
+    background-color: #333; /* Background color for the navigation bar */
+    padding: 10px; /* Add some padding to the navigation bar */
+}
+
+ul {
+    list-style-type: none; /* Remove list bullet points */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center-align the list items */
+}
+
+li {
+    display: inline; /* Display list items in a horizontal line */
+    margin-right: 20px; /* Add spacing between list items */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Text color for links */
+    font-weight: bold; /* Make the text bold */
+}
+
+a:hover {
+    color: yellow; /* Change link color on hover */
+}
+
+.current a {
+    background-color: gray; /* Change the background color for the current link */
+    text-decoration: wavy underline;
+    color: white; /* Change the text color for the current link */
+    font-weight: bold; /* Make the text bold for the current link */
+}
+
+#skip-link {
+    display: none;
+}
