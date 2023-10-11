@@ -36,3 +36,29 @@ a:hover {
 #skip-link {
     display: none;
 }
+
+.content-wrapper {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left (start) of the page */
+}
+
+/* Basic styling for the image grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
+    gap: 10px; /* Add a gap between grid items */
+    width: 300px;
+}
+
+/* Styling for image items */
+.image-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style images within grid items */
+.image-item img {
+    max-width: 100%;
+    max-height: 100%;
+}
