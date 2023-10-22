@@ -1,36 +1,36 @@
 /* Style the navigation bar */
 nav {
-    background-color: #333; /* Background color for the navigation bar */
-    padding: 10px; /* Add some padding to the navigation bar */
+    background-color: #333;
+    padding: 10px;
 }
 
 ul {
-    list-style-type: none; /* Remove list bullet points */
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center; /* Center-align the list items */
+    text-align: center;
 }
 
 li {
-    display: inline; /* Display list items in a horizontal line */
-    margin-right: 20px; /* Add spacing between list items */
+    display: inline;
+    margin-right: 20px;
 }
 
 a {
-    text-decoration: none; /* Remove underline from links */
-    color: white; /* Text color for links */
-    font-weight: bold; /* Make the text bold */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 a:hover {
-    color: yellow; /* Change link color on hover */
+    color: yellow;
 }
 
 .current a {
-    background-color: gray; /* Change the background color for the current link */
+    background-color: gray;
     text-decoration: wavy underline;
-    color: white; /* Change the text color for the current link */
-    font-weight: bold; /* Make the text bold for the current link */
+    color: white;
+    font-weight: bold;
 }
 
 #skip-link {
@@ -39,26 +39,97 @@ a:hover {
 
 .content-wrapper {
     display: flex;
-    justify-content: flex-start; /* Align content to the left (start) of the page */
+    justify-content: flex-start;
 }
 
-/* Basic styling for the image grid */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
-    gap: 10px; /* Add a gap between grid items */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     width: 300px;
 }
 
-/* Styling for image items */
 .image-item {
-    border: 1px solid #ccc;
-    padding: 10px;
     text-align: center;
 }
 
-/* Style images within grid items */
 .image-item img {
     max-width: 100%;
     max-height: 100%;
+}
+
+/* PETS STYLING */
+
+div.pet_1 h1 {
+text-align: center;
+}
+div.pet-8 h3 {
+text-decoration: underline;
+    }
+
+.pet-1,.pet-2,.pet-3,.pet-4,.pet-5,.pet-6,.pet-7,.pet-8{
+    max-width: 320px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.pet-4, .pet-5, .pet-6, .pet-7{
+    min-height: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+.pet-1 img{
+    max-width: 250px;
+    border: #333;
+    border-radius: 10px;
+
+}
+
+.pet-4 img, .pet-5 img,.pet-6 video, .pet-6 img,.pet-7 img{
+    max-width: 90%;
+    max-height: 90%;
+    min-width: 90%;
+    min-height: 90%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.pet-1{
+    text-align: center;
+    grid-area: 1/1/span 1/span all;
+}
+.pet-2{
+    text-align: center;
+    grid-area: 2/1/span 1/span all;
+}
+.pet-3{
+    text-decoration: underline;
+    grid-area: 3/1/span 1/span all;
+}
+.pet-4{
+    grid-area: 4/1/span 1/span all;
+}
+.pet-5{
+    grid-area: 4/2/span 1/span all;
+}
+.pet-6{
+    grid-area: 5/1/span 1/span all;
+}
+.pet-7{
+    grid-area: 5/2/span 1/span all;
+}
+.pet-8{
+    text-align: center;
+    grid-area: 6/1/span 1/span all;
+}
+
+@media (max-width: 768px) {
+    .center-container {
+        width: 100%;
+    }
+
+    .pet_1 {
+        width: 80%;
+    }
 }
