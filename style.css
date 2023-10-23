@@ -277,9 +277,6 @@ hr {
     color: black;
 }
 
-.recipe-6 ul li:not(:last-child) {
-    margin-bottom: 1em;
-}
 .recipe-8 ol {
     list-style-type: decimal;
     color: black;
