@@ -33,9 +33,7 @@ a:hover {
     font-weight: bold;
 }
 
-#skip-link {
-    display: none;
-}
+
 
 .content-wrapper {
     display: flex;
@@ -122,16 +120,6 @@ text-decoration: underline;
 .pet-8{
     text-align: center;
     grid-area: 6/1/span 1/span all;
-}
-
-@media (max-width: 768px) {
-    .center-container {
-        width: 100%;
-    }
-
-    .pet_1 {
-        width: 80%;
-    }
 }
 
 hr {
@@ -238,6 +226,7 @@ hr {
     font-size: 1em;
     color: black;
     line-height: 1.6;
+    text-align: center;
 }
 
 .recipe-6 ul li {
@@ -256,7 +245,7 @@ hr {
     list-style-type: decimal;
     color: black;
     counter-reset: item;
-    text-align: left;
+    list-style-position: outside;
 }
 
 .recipe-8 ol li {
@@ -281,3 +270,87 @@ hr {
     border-style: inset;
     border-width: 1px;
   }
+
+  /* TRAVEL STYLING */
+  .image-container {
+    border: 2px solid #333;
+  }
+  a {
+    color: red;
+    text-decoration: underline;
+  }
+h1 {
+    text-align: center;
+    }
+
+  .travel-1,.travel-2,.travel-3,.travel-4,.travel-5,.travel-6,.travel-grid{
+    max-width: 320px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.travel_container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    overflow:hidden;
+    justify-items: center;
+}
+
+.travel-1{
+    grid-area: 1/1/span 1/span 2;
+    text-align: center;
+
+}
+.travel-2{
+    grid-area: 1/1/span 1/ span 1;
+    margin: 10px;
+    border: 5px solid black;
+}
+.travel-3{
+    grid-area: 2/1/span 1/ span 1;
+    border: 5px solid black;
+
+}
+.travel-2,.travel-3{
+    max-height: 250px;
+}
+.travel-2 img,.travel-3 img{
+    object-fit: cover;
+    max-height: 250px;
+    min-height: 300px;
+    max-width: 200px;
+}
+
+.travel-4{
+    grid-area: 3/1/span 1/ span 2;
+    text-align: center;
+}
+.travel-5{
+    grid-area: 4/1/span 1/ span 2;
+    text-align: center;
+}
+.travel-6{
+    grid-area: 5/1/span 1/ span 2;
+    text-decoration: underline;
+}
+.travel-grid{
+    grid-area: 5/1/span 1/ span 2;
+    display: grid;
+    padding: 40px;
+    justify-items:center;
+}
+
+.travel-grid video, .travel-grid img{
+    object-fit: cover;
+    max-height: 250px;
+    max-width: 250px;
+    border: solid black 5px;
+}
+
+.travel-grid figcaption{
+    max-width: 200px;
+    padding: 10px 0 40px 0;
+    text-align: center;
+}
