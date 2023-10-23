@@ -314,26 +314,26 @@ h1 {
 .travel_container{
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1.5, 1fr);
     position: relative;
     overflow:hidden;
     justify-items: center;
 }
 
 .travel-1{
-    grid-area: 1/1/span 1/span 2;
+    grid-area: 1/1/span 1/span 1;
     text-align: center;
-
 }
+
 .travel-2{
-    grid-area: 1/1/span 1/ span 1;
+    grid-area: 2/1/span 1/ span 1;
     margin: 10px;
     border-radius: 20px;
     border: solid 5px black;
 }
 
 .travel-3{
-    grid-area: 2/1/span 1/ span 1;
+    grid-area: 3/1/span 1/ span 1;
     border-radius: 20px;
     border: solid 5px black;
 
@@ -349,19 +349,19 @@ h1 {
 }
 
 .travel-4{
-    grid-area: 3/1/span 1/ span 2;
-    text-align: center;
-}
-.travel-5{
     grid-area: 4/1/span 1/ span 2;
     text-align: center;
 }
-.travel-6{
+.travel-5{
     grid-area: 5/1/span 1/ span 2;
+    text-align: center;
+}
+.travel-6{
+    grid-area: 6/1/span 1/ span 2;
     text-decoration: underline;
 }
 .travel-grid{
-    grid-area: 5/1/span 1/ span 2;
+    grid-area: 8/1/span 1/ span 2;
     display: grid;
     padding: 40px;
     justify-items:center;
