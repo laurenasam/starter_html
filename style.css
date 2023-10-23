@@ -65,6 +65,23 @@ a:hover {
     max-height: 100%;
 }
 
+@media screen and (prefers-reduced-motion: reduce){
+    .skip a{
+        -webkit-transition: none;
+        transition: none;
+       }
+    .travel-2{
+        position: fixed;
+        visibility: hidden;
+    }
+    .gif{
+        visibility: hidden;
+    }
+    .travel-3{
+        grid-area: 3/1/span 1/span all;
+    }
+}
+
 /* PETS STYLING */
 .content-wrapper {
     display: flex;
